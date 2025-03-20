@@ -140,12 +140,12 @@
       "recipes/{$name}": ["type:drupal-recipe"],
       "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
     },
-    "composer-exit-on-patch-failure": false,
     "installer-types": [
       "bower-asset",
       "npm-asset"
     ],
     "enable-patching": true,
+    "composer-exit-on-patch-failure": false,
     "patchLevel": {
       "drupal/core": "-p2"
     },
