@@ -1,8 +1,8 @@
 {
   "name": "neopixelquest/pantheon-core",
   "description": "Core Pantheon Upstream for Drupal websites.",
-  "version": "1.0.2",
-  "type": "project",
+  "version": "1.0.3",
+  "type": "metapackage",
   "license": "GPL-2.0-or-later",
   "repositories": [
     {
