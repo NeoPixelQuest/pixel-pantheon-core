@@ -1,7 +1,7 @@
 {
   "name": "neopixelquest/pantheon-core",
   "description": "Core Pantheon Upstream for Drupal websites.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "metapackage",
   "license": "GPL-2.0-or-later",
   "repositories": [
@@ -164,6 +164,9 @@
       },
       "drupal/entity_reference_revisions": {
         "Patch for Revisions of Paragraphs": "https://www.drupal.org/files/issues/2024-03-16/3428639-7.patch"
+      },
+      "drupal/layout_builder_restrictions": {
+        "Fix NULL on 3rd Party Settings.": "https://git.drupalcode.org/project/layout_builder_restrictions/-/merge_requests/39.diff"
       },
       "drupal/media_entity_download": {
         "Fix Layout Builder Compatability": "https://www.drupal.org/files/issues/2022-05-19/media_entity_download-3057444-7.patch"
