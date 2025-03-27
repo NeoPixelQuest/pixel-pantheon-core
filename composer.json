@@ -1,7 +1,7 @@
 {
   "name": "neopixelquest/pantheon-core",
   "description": "Core Pantheon Upstream for Drupal websites.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "metapackage",
   "license": "GPL-2.0-or-later",
   "repositories": [
@@ -179,6 +179,9 @@
       },
       "drupal/views_infinite_scroll": {
         "infinite scroll does not work for multiple views on a single page": "https://www.drupal.org/files/issues/2021-03-23/2877652-29-fix_views_infinite_scroll_pager_when_multi_views_on_single_page.patch"
+      },
+      "drupal/workbench_email": {
+        "Fix Compatability with Trash Module.": "https://www.drupal.org/files/issues/2025-03-27/workbench-email-issue-3515843-02.patch"
       }
     }
   }
