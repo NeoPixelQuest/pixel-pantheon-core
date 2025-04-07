@@ -1,9 +1,21 @@
 {
-  "name": "neopixelquest/pantheon-core",
+  "name": "pixelquest/pixel-pantheon-core",
   "description": "Core Pantheon Upstream for Drupal websites.",
-  "version": "1.0.7",
   "type": "metapackage",
+  "homepage": "https://github.com/NeoPixelQuest/pixel-pantheon-core",
   "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Michael Palmer",
+      "email": "michael@pixel-quest.io",
+      "homepage": "https://pixel-quest.io",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/NeoPixelQuest/pixel-pantheon-core/issues",
+    "source": "https://github.com/NeoPixelQuest/pixel-pantheon-core.git"
+  },
   "repositories": [
     {
       "type": "composer",
