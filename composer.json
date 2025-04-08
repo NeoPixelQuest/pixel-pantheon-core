@@ -27,8 +27,6 @@
     }
   ],
   "require": {
-    "composer/installers": "^2.3",
-    "cweagans/composer-patches": "^1.7",
     "drupal/add_content_by_bundle": "^1.2",
     "drupal/autosave_form": "^1.8",
     "drupal/better_exposed_filters": "^7.0",
@@ -99,62 +97,14 @@
     "drupal/views_infinite_scroll": "^2.0",
     "drupal/workbench_email": "^3.0",
     "drupal/yoast_seo": "^2.1",
-    "drush/drush": "^11 || ^12 || ^13"
-  },
-  "conflict": {
-    "drupal/drupal": "*"
+    "drupal/core-recommended": "^11"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
-    "allow-plugins": {
-      "composer/installers": true,
-      "cweagans/composer-patches": true,
-      "dealerdirect/phpcodesniffer-composer-installer": true,
-      "drupal/core-composer-scaffold": true,
-      "php-http/discovery": true,
-      "phpstan/extension-installer": true
-    },
-    "sort-packages": true,
-    "platform": {
-      "php": "8.3"
-    }
+    "sort-packages": true
   },
   "extra": {
-    "drupal-scaffold": {
-      "locations": {
-        "web-root": "web/"
-      },
-      "allowed-packages": [
-        "pantheon-systems/drupal-integrations"
-      ],
-      "file-mapping": {
-        "[project-root]/.editorconfig": false,
-        "[project-root]/pantheon.upstream.yml": false,
-        "[project-root]/.gitattributes": false
-      }
-    },
-    "installer-paths": {
-      "web/core": ["type:drupal-core"],
-      "web/libraries/{$name}": [
-        "type:drupal-library",
-        "type:bower-asset",
-        "type:npm-asset"
-      ],
-      "web/modules/contrib/{$name}": ["type:drupal-module"],
-      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-      "web/themes/contrib/{$name}": ["type:drupal-theme"],
-      "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-      "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
-      "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-      "recipes/{$name}": ["type:drupal-recipe"],
-      "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
-    },
-    "installer-types": [
-      "bower-asset",
-      "npm-asset"
-    ],
     "enable-patching": true,
     "composer-exit-on-patch-failure": false,
     "patchLevel": {
